@@ -1,0 +1,5 @@
+node_modules
+karma.conf.js
+.idea
+test-results
+npm-debug.log

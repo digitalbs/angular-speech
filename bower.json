@@ -1,0 +1,26 @@
+{
+    "name": "Angular-Speech",
+    "version": "0.0.0",
+    "homepage": "",
+    "authors": ["Brian Schneider"],
+    "license": "All Rights Reserved",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test-results",
+        "spec"
+    ],
+    "main": [
+        "exports/speech.js",
+        "exports/speech.min.js"
+    ],
+    "dependencies": {
+        "angular": "~1.2.6"
+    },
+    "devDependencies": {
+        "angular-route": "~1.2.6",
+        "angular-mocks": "~1.2.6"
+    }
+}

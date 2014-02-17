@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>Angular Speech</title>
+    <link rel="stylesheet" href="stylesheets/app.css"/>
+</head>
+
+<body ng-app="speechExample">
+<header id="app-header">
+    <h1><a href="#/">Angular Speech API</a></h1>
+</header>
+
+<div ng-view class="main-content"></div>
+
+<script type="text/javascript" src="../src/vendor/angular/angular.js"></script>
+<script type="text/javascript" src="../src/vendor/angular-route/angular-route.js"></script>
+<script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="../exports/speech.js"></script>
+<script type="text/javascript" src="app/controllers.js"></script>
+<script type="text/javascript" src="app/controllers/providers/SpeechSynthesisCtrl.js"></script>
+</body>
+</html>

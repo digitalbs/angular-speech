@@ -1,0 +1,89 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: arial;
+}
+
+a {
+    color: cadetblue;
+    cursor: pointer;
+}
+
+p, h1, h2, h3, h4, h5 {
+    margin:0.5em 0;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #4080a0;
+}
+
+
+ol {
+    margin:1.5em;
+}
+
+/*** App Header ***/
+#app-header nav ul {
+    background:#333;
+}
+
+#app-header nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+#app-header nav a {
+    color:#fff;
+    text-decoration: none;
+    display:block;
+    padding:5px 15px;
+}
+
+#app-header nav a:hover {
+    background:#777;
+}
+
+#app-header h1 {
+    margin:0.7em;
+}
+
+#app-header h1 a {
+    text-decoration: none;
+}
+
+/*** Main Agility Utils Examples ***/
+.main-content {
+    margin:1.5em 0;
+    padding:0 1.5em;
+}
+
+
+/*** Examples ***/
+.examples {
+    padding:1.5em 0.5em;
+}
+
+.example {
+    background:#efefef;
+    padding:0.8em 1em;
+    border-radius: 10px;
+    margin-top:0.8em;
+}
+
+.example header {
+    margin-bottom:1em;
+}
+
+.item-to-change {
+    border:1px solid #999;
+    padding:0.5em;
+    margin-top:1.5em;
+}
+
+/***
+Layout Controls
+***/
+.isActive {
+    background:#fff;
+}
