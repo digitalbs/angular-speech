@@ -6,7 +6,12 @@
             <h3>Example 1: Send a Text</h3>
         </header>
         <form ng-submit="submitEntry()">
+            <p>Select a voice from the list and enter some text.</p>
+            <select ng-model="optionSelected" ng-options="voice.name for voice in voices">
+                <option value="">Choose Accent</option>
+            </select>
             <input ng-model="msg" type="text" placeholder="Enter here"/>
+            <button class="btn">Say What?</button>
             <br/><br/>
         </form>
 

@@ -19,6 +19,7 @@ angular.module('digitalbs.speech', []).
         function sayIt(text, config) {
             var voices = window.speechSynthesis.getVoices();
             //choose voice. Fallback to default
+            console.log(voices);
             msg.voice = config && config.voiceIndex ? voices[config.voiceIndex] : voices[2];
             msg.volume = config && config.volume ? config.volume : 1;
             msg.rate = config && config.rate ? config.rate : 1;
