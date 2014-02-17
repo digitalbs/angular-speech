@@ -7,11 +7,14 @@
  */
 angular.module('digitalbs.speech', []).
     factory('speech', function () {
-        var msg = new SpeechSynthesisUtterance();
 
-        //calling get voices method first scaffolds it for
-        //use in say method
-        window.speechSynthesis.getVoices();
+        if(window.speechSynthesis) {
+            var msg = new SpeechSynthesisUtterance();
+
+            //calling get voices method first scaffolds it for
+            //use in say method
+            window.speechSynthesis.getVoices();
+        }
 
         function sayIt(text, config) {
             var voices = window.speechSynthesis.getVoices();
@@ -25,8 +28,8 @@ angular.module('digitalbs.speech', []).
             msg.text = text;
 
             speechSynthesis.speak(msg);
-
         }
+
 
         return {
             sayText: sayIt

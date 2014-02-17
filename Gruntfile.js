@@ -32,6 +32,16 @@ module.exports = function (grunt) {
                 }
             }
         },
+        uglify: {
+            options: {
+                mangle: true
+            },
+            deploy: {
+                files:{
+                    'exports/speech.min.js': ['src/speech.js']
+                }
+            }
+        },
         clean: {
             options: {
                 force: true
@@ -117,7 +127,8 @@ module.exports = function (grunt) {
 
     grunt.registerTask('deploy', [
         'clean',
-        'copy:deploy'
+        'copy:deploy',
+        'uglify'
     ]);
 
 

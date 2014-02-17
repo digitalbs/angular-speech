@@ -1,7 +1,5 @@
 angular.module('digitalbs.examples.speechSynthesis', [])
     .controller('speechCtrl', ['$scope', 'speech', function ($scope, speech) {
-        $scope.support = speech.setVoice();
-
         $scope.submitEntry = function () {
 
             var config = {
@@ -13,7 +11,7 @@ angular.module('digitalbs.examples.speechSynthesis', [])
             if(window.speechSynthesis) {
                 speech.sayText($scope.msg, config);
             } else {
-                $scope.support = 'Speech not Supported in this browser';
+                $scope.support = 'The speech API is not Supported in this browser. You entered in: ' + $scope.msg;
             }
 
         }
