@@ -1,8 +1,11 @@
 angular.module('digitalbs.examples.speechSynthesis', [])
     .controller('speechCtrl', ['$scope', 'speech', function ($scope, speech) {
+        $scope.support = speech.setVoice();
+
         $scope.submitEntry = function () {
+
             var config = {
-                voiceIndex: 9,
+                voiceIndex: 1,
                 rate: 2,
                 pitch: 10
             }

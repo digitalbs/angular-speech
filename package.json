@@ -1,7 +1,7 @@
 {
   "name": "Angular-Speech",
   "version": "0.0.1",
-  "description": "Angular Speech service/factory.",
+  "description": "This repo contains an Angular Factory for support of Speech Synthesis. The current fallback for non-supported browsers is to return the text that is to be read back.",
   "scripts": {
     "postinstall": "grunt bower;"
   },
