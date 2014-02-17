@@ -15,7 +15,7 @@ There are different ways to alter the voice. You can alter the range, pitch, voi
 
 The following section covers the voice locale index you need to pass to change the language type:
 
-1. US English Male Accent: Index of 0
+1. US Accent: Index of 0
 2. UK English Male Accent: Index of 1
 3. UK English Female Accent: Index of 2
 4. Spain Accent: Index of 3
